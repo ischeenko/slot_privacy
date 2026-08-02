@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Политика конфиденциальности — SLOT</title>
+<title>Privacy Policy — SLOT</title>
 <style>
   :root{
     --dark:#0B0E14;
@@ -28,7 +28,20 @@
   }
   .doc-title{
     font-size:15px;color:var(--muted);
-    text-transform:uppercase;letter-spacing:1px;margin-bottom:40px;
+    text-transform:uppercase;letter-spacing:1px;margin-bottom:28px;
+  }
+  .lang-switch{
+    display:inline-flex;gap:4px;background:var(--card);
+    border-radius:999px;padding:4px;margin-bottom:36px;
+  }
+  .lang-switch button{
+    border:none;background:transparent;color:var(--muted);
+    font-size:14px;font-weight:600;padding:8px 20px;
+    border-radius:999px;cursor:pointer;transition:all .15s;
+    font-family:inherit;
+  }
+  .lang-switch button.active{
+    background:var(--lime);color:var(--dark);
   }
   h2{
     font-size:20px;font-weight:700;color:#fff;
@@ -57,107 +70,215 @@
     border-top:1px solid var(--line);
     color:var(--muted);font-size:13px;
   }
+  [data-lang]{display:none;}
+  [data-lang].visible{display:block;}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <div class="brand">SLOT</div>
-  <div class="doc-title">Политика конфиденциальности</div>
+  <div class="doc-title" data-lang="ru">Политика конфиденциальности</div>
+  <div class="doc-title" data-lang="en">Privacy Policy</div>
 
-  <span class="updated">Обновлено: 2 августа 2026</span>
-
-  <p>Настоящая Политика описывает, какие данные собирает приложение
-  SLOT (далее — «Приложение»), как они используются и как вы можете
-  ими управлять. Устанавливая и используя Приложение, вы соглашаетесь
-  с условиями этой Политики.</p>
-
-  <h2>Какие данные мы собираем</h2>
-  <p>Мы собираем только те данные, которые необходимы для работы
-  сервиса поиска спортивных партнёров и площадок:</p>
-  <ul>
-    <li><strong>Данные аккаунта:</strong> адрес электронной почты
-    (при регистрации по email или через Apple).</li>
-    <li><strong>Данные профиля:</strong> имя, фамилия, никнейм,
-    контактные данные (телефон, Telegram — если вы их указали),
-    фотография профиля, выбранные виды спорта и уровень игры.</li>
-    <li><strong>Геолокация:</strong> ваше местоположение используется,
-    чтобы показывать ближайшие игры и площадки. Доступ запрашивается
-    отдельно; вы можете отказать или отозвать его в настройках
-    устройства.</li>
-    <li><strong>Игровая активность:</strong> созданные и посещённые
-    матчи, заявки на участие, сообщения в чатах.</li>
-    <li><strong>Технические данные:</strong> идентификатор устройства
-    для отправки push-уведомлений.</li>
-  </ul>
-
-  <h2>Как мы используем данные</h2>
-  <ul>
-    <li>Для поиска и отображения игр и площадок рядом с вами.</li>
-    <li>Для организации матчей, обработки заявок и общения между
-    участниками.</li>
-    <li>Для отправки уведомлений о заявках, играх и сообщениях.</li>
-    <li>Для обеспечения безопасности и предотвращения
-    злоупотреблений.</li>
-  </ul>
-  <p>Мы <strong>не продаём</strong> ваши персональные данные третьим
-  лицам и не используем их для рекламы вне сервиса.</p>
-
-  <h2>Хранение и обработка</h2>
-  <p>Данные хранятся и обрабатываются с использованием сервисов
-  <strong>Google Firebase</strong> (Firebase Authentication, Cloud
-  Firestore, Cloud Storage, Cloud Messaging). Google выступает
-  обработчиком данных и обеспечивает их защиту в соответствии со своей
-  политикой конфиденциальности:
-  <a href="https://firebase.google.com/support/privacy" target="_blank"
-  rel="noopener">firebase.google.com/support/privacy</a>.</p>
-
-  <h2>Что видят другие пользователи</h2>
-  <p>Часть данных профиля (имя или никнейм, фотография, виды спорта,
-  уровень) видна другим участникам, чтобы они могли найти вас для
-  игры. Контактные данные и email другим пользователям
-  не показываются, если вы сами их не сообщите.</p>
-
-  <h2>Пользовательский контент и модерация</h2>
-  <p>Приложение содержит чаты и профили, создаваемые пользователями.
-  Мы не допускаем оскорбительный, незаконный или нарушающий права
-  контент. Вы можете пожаловаться на контент или пользователя, а
-  также заблокировать пользователя прямо в Приложении. Мы
-  рассматриваем жалобы и вправе удалять контент и блокировать
-  аккаунты, нарушающие правила.</p>
-
-  <h2>Ваши права</h2>
-  <ul>
-    <li><strong>Доступ и изменение:</strong> вы можете
-    просматривать и редактировать данные профиля в Приложении.</li>
-    <li><strong>Удаление аккаунта:</strong> вы можете удалить свой
-    аккаунт и связанные с ним данные прямо в Приложении (Профиль →
-    Настройки → Удалить аккаунт). После удаления восстановление
-    невозможно.</li>
-    <li><strong>Отзыв доступа:</strong> вы можете отключить
-    геолокацию и уведомления в настройках устройства в любой
-    момент.</li>
-  </ul>
-
-  <h2>Дети</h2>
-  <p>Приложение не предназначено для лиц младше возраста, разрешённого
-  законодательством вашей страны для использования подобных сервисов.
-  Мы сознательно не собираем данные детей.</p>
-
-  <h2>Изменения в Политике</h2>
-  <p>Мы можем обновлять эту Политику. Существенные изменения будут
-  отражены на этой странице с обновлением даты в начале документа.</p>
-
-  <div class="contact">
-    <h2>Контакты</h2>
-    <p>По вопросам, связанным с обработкой данных, пишите на:
-    <a href="mailto:ischeenko@gmail.com">ischeenko@gmail.com</a></p>
+  <div class="lang-switch">
+    <button id="btn-ru" class="active" onclick="setLang('ru')">Русский</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
   </div>
 
-  <footer>
-    © SLOT. Все права защищены.
-  </footer>
+  <!-- ============ РУССКИЙ ============ -->
+  <div data-lang="ru">
+    <span class="updated">Обновлено: 2 августа 2026</span>
+
+    <p>Настоящая Политика описывает, какие данные собирает приложение
+    SLOT (далее — «Приложение»), как они используются и как вы можете
+    ими управлять. Устанавливая и используя Приложение, вы соглашаетесь
+    с условиями этой Политики.</p>
+
+    <h2>Какие данные мы собираем</h2>
+    <p>Мы собираем только те данные, которые необходимы для работы
+    сервиса поиска спортивных партнёров и площадок:</p>
+    <ul>
+      <li><strong>Данные аккаунта:</strong> адрес электронной почты
+      (при регистрации по email или через Apple).</li>
+      <li><strong>Данные профиля:</strong> имя, фамилия, никнейм,
+      контактные данные (телефон, Telegram — если вы их указали),
+      фотография профиля, выбранные виды спорта и уровень игры.</li>
+      <li><strong>Геолокация:</strong> ваше местоположение используется,
+      чтобы показывать ближайшие игры и площадки. Доступ запрашивается
+      отдельно; вы можете отказать или отозвать его в настройках
+      устройства.</li>
+      <li><strong>Игровая активность:</strong> созданные и посещённые
+      матчи, заявки на участие, сообщения в чатах.</li>
+      <li><strong>Технические данные:</strong> идентификатор устройства
+      для отправки push-уведомлений.</li>
+    </ul>
+
+    <h2>Как мы используем данные</h2>
+    <ul>
+      <li>Для поиска и отображения игр и площадок рядом с вами.</li>
+      <li>Для организации матчей, обработки заявок и общения между
+      участниками.</li>
+      <li>Для отправки уведомлений о заявках, играх и сообщениях.</li>
+      <li>Для обеспечения безопасности и предотвращения
+      злоупотреблений.</li>
+    </ul>
+    <p>Мы <strong>не продаём</strong> ваши персональные данные третьим
+    лицам и не используем их для рекламы вне сервиса.</p>
+
+    <h2>Хранение и обработка</h2>
+    <p>Данные хранятся и обрабатываются с использованием сервисов
+    <strong>Google Firebase</strong> (Firebase Authentication, Cloud
+    Firestore, Cloud Storage, Cloud Messaging). Google выступает
+    обработчиком данных и обеспечивает их защиту в соответствии со своей
+    политикой конфиденциальности:
+    <a href="https://firebase.google.com/support/privacy" target="_blank"
+    rel="noopener">firebase.google.com/support/privacy</a>.</p>
+
+    <h2>Что видят другие пользователи</h2>
+    <p>Часть данных профиля (имя или никнейм, фотография, виды спорта,
+    уровень) видна другим участникам, чтобы они могли найти вас для
+    игры. Контактные данные и email другим пользователям
+    не показываются, если вы сами их не сообщите.</p>
+
+    <h2>Пользовательский контент и модерация</h2>
+    <p>Приложение содержит чаты и профили, создаваемые пользователями.
+    Мы не допускаем оскорбительный, незаконный или нарушающий права
+    контент. Вы можете пожаловаться на контент или пользователя, а
+    также заблокировать пользователя прямо в Приложении. Мы
+    рассматриваем жалобы и вправе удалять контент и блокировать
+    аккаунты, нарушающие правила.</p>
+
+    <h2>Ваши права</h2>
+    <ul>
+      <li><strong>Доступ и изменение:</strong> вы можете
+      просматривать и редактировать данные профиля в Приложении.</li>
+      <li><strong>Удаление аккаунта:</strong> вы можете удалить свой
+      аккаунт и связанные с ним данные прямо в Приложении (Профиль →
+      Настройки → Удалить аккаунт). После удаления восстановление
+      невозможно.</li>
+      <li><strong>Отзыв доступа:</strong> вы можете отключить
+      геолокацию и уведомления в настройках устройства в любой
+      момент.</li>
+    </ul>
+
+    <h2>Дети</h2>
+    <p>Приложение не предназначено для лиц младше возраста, разрешённого
+    законодательством вашей страны для использования подобных сервисов.
+    Мы сознательно не собираем данные детей.</p>
+
+    <h2>Изменения в Политике</h2>
+    <p>Мы можем обновлять эту Политику. Существенные изменения будут
+    отражены на этой странице с обновлением даты в начале документа.</p>
+
+    <div class="contact">
+      <h2>Контакты</h2>
+      <p>По вопросам, связанным с обработкой данных, пишите на:
+      <a href="mailto:ischeenko@gmail.com">ischeenko@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div data-lang="en">
+    <span class="updated">Last updated: August 2, 2026</span>
+
+    <p>This Policy describes what data the SLOT application (the “App”)
+    collects, how it is used, and how you can manage it. By installing
+    and using the App, you agree to the terms of this Policy.</p>
+
+    <h2>What data we collect</h2>
+    <p>We collect only the data necessary to operate the service for
+    finding sports partners and venues:</p>
+    <ul>
+      <li><strong>Account data:</strong> your email address (when
+      registering by email or through Apple).</li>
+      <li><strong>Profile data:</strong> first and last name, nickname,
+      contact details (phone, Telegram — if you provide them), profile
+      photo, selected sports and skill level.</li>
+      <li><strong>Location:</strong> your location is used to show
+      nearby games and venues. Access is requested separately; you can
+      decline or revoke it in your device settings.</li>
+      <li><strong>Activity data:</strong> games you create and join,
+      join requests, and chat messages.</li>
+      <li><strong>Technical data:</strong> a device identifier used to
+      deliver push notifications.</li>
+    </ul>
+
+    <h2>How we use data</h2>
+    <ul>
+      <li>To find and display games and venues near you.</li>
+      <li>To organize matches, process join requests, and enable
+      communication between participants.</li>
+      <li>To send notifications about requests, games, and messages.</li>
+      <li>To ensure safety and prevent abuse.</li>
+    </ul>
+    <p>We <strong>do not sell</strong> your personal data to third
+    parties and do not use it for advertising outside the service.</p>
+
+    <h2>Storage and processing</h2>
+    <p>Data is stored and processed using <strong>Google Firebase</strong>
+    services (Firebase Authentication, Cloud Firestore, Cloud Storage,
+    Cloud Messaging). Google acts as a data processor and protects the
+    data in accordance with its privacy policy:
+    <a href="https://firebase.google.com/support/privacy" target="_blank"
+    rel="noopener">firebase.google.com/support/privacy</a>.</p>
+
+    <h2>What other users can see</h2>
+    <p>Some profile data (name or nickname, photo, sports, skill level)
+    is visible to other participants so they can find you to play.
+    Your contact details and email are not shown to other users unless
+    you share them yourself.</p>
+
+    <h2>User-generated content and moderation</h2>
+    <p>The App contains chats and profiles created by users. We do not
+    allow offensive, illegal, or infringing content. You can report
+    content or a user, and block a user directly in the App. We review
+    reports and may remove content and block accounts that violate the
+    rules.</p>
+
+    <h2>Your rights</h2>
+    <ul>
+      <li><strong>Access and editing:</strong> you can view and edit
+      your profile data in the App.</li>
+      <li><strong>Account deletion:</strong> you can delete your account
+      and associated data directly in the App (Profile → Settings →
+      Delete Account). Deletion is permanent and cannot be undone.</li>
+      <li><strong>Revoking access:</strong> you can disable location and
+      notifications in your device settings at any time.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>The App is not intended for individuals under the age permitted by
+    the laws of your country for using such services. We do not knowingly
+    collect data from children.</p>
+
+    <h2>Changes to this Policy</h2>
+    <p>We may update this Policy. Material changes will be reflected on
+    this page with an updated date at the top of the document.</p>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>For questions regarding data processing, write to:
+      <a href="mailto:ischeenko@gmail.com">ischeenko@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>© SLOT. All rights reserved.</footer>
 
 </div>
+
+<script>
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+    });
+    document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+  // Стартовый язык — по языку браузера: en для англоязычных, иначе ru.
+  var initial = (navigator.language || 'ru').toLowerCase().startsWith('en') ? 'en' : 'ru';
+  setLang(initial);
+</script>
 </body>
 </html>
